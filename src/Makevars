@@ -1,0 +1,7 @@
+SOURCES = $(wildcard *.cpp)
+OBJECTS = $(SOURCES:.cpp=.o)
+PKG_CPPFLAGS = -Wa,-mbig-obj -Wno-reorder -fopenmp -I. -Wno-ignored-attributes
+PKG_LIBS = -fopenmp
+CXX_STD = CXX17
+CC=ccache gcc
+CXX=ccache g++

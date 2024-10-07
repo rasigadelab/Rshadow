@@ -1,0 +1,6 @@
+useDynLib(Rshadow, .registration=TRUE)
+importFrom(Rcpp, evalCpp)
+importFrom(Rcpp, Module)
+exportPattern("^[[:alpha:]]+")
+exportClass("shadow_tensor")
+exportClass("shadow_spy")

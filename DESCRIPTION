@@ -1,0 +1,18 @@
+Package: Rshadow
+Type: Package
+Title: Second-order autodiff optimization for R
+Version: 0.1
+Date: 2024-08-28
+Author: Jean-Philippe Rasigade
+Maintainer: Jean-Philippe Rasigade <jean-philippe.rasigade@univ-lyon1.fr>
+Description: Provides Rcpp bindings to the C++ SHADOw library
+ for high-performance optimization and maximum likelihood analysis.
+ SHADOw stands for Sparse Hessian Automatic Differentiation Optimization frameWork.
+License: CC BY-NC-ND 4.0
+Imports: Rcpp (>= 1.0.13)
+LinkingTo: Rcpp, RcppEigen
+RoxygenNote: 7.3.2
+Encoding: UTF-8
+Suggests: 
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
