@@ -1,6 +1,6 @@
 Package: Rshadow
 Type: Package
-Title: Second-order autodiff optimization for R
+Title: Autodiff Newton optimizer for R
 Version: 0.1
 Date: 2024-08-28
 Author: Jean-Philippe Rasigade
