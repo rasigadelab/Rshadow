@@ -7,6 +7,7 @@ library(Rshadow)
 library(testthat)
 
 test_that("solver finds the maximum of -x²", {
+    curve(-(x^2), -2, 2)
     tape <- tape_new()
     x <- spy(1.5, tape) # Starting point
     y <- -x^2
