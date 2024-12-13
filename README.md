@@ -15,10 +15,12 @@ This repository only holds pre-compiled binaries. The `Rshadow` package is the s
 
 That's it. You define the objective, the package searches for it.
 
-## Install (Windows only)
+## Install
+
+The binary package is built for 64-bit Windows using R 4.4.2. Please contact us if you're willing to test on a different version or OS.
 
 ```R
-install.packages("https://github.com/rasigadelab/Rshadow/raw/main/Rshadow_0.1.zip", repos = NULL)
+install.packages("https://github.com/rasigadelab/Rshadow/raw/main/Rshadow_0.21.zip", repos = NULL)
 ```
 
 ## Rshadow Hello World
@@ -32,7 +34,7 @@ Rshadow is targeted at maximum likelihood estimation, so we usually *maximize* t
 4. Call `maximize`
 5. Recover parameter values from the tape using `read`
 
-Our *Hello World* example finds the maximum of the function $f(x) = -x^2$:
+The following example finds the maximum of the function $f(x) = -x^2$:
 ```r
 library(Rshadow)
 tape <- objective()
@@ -66,6 +68,6 @@ All functions apply on vectors and matrices unless stated otherwise.
 
 For general-purpose optimization, consider [TensorFlow](https://www.tensorflow.org/) or [PyTorch](https://pytorch.org/). For specialized autodiff and function manipulation, consider [JAX](https://jax.readthedocs.io/en/latest/index.html) or [CasADi](https://web.casadi.org/). For simple optimization over low-dimensional parameter spaces, use the built-in R method `optim`. For exhaustive exploration of complicated, possibly multimodal posterior distributions, consider using Bayesian frameworks such a [Stan](https://mc-stan.org/) or [BEAST2](https://www.beast2.org/).
 
-## Going further? Read the docs
+## Want to go further? Read the docs
 
 [Basic tutorial](tutorials/tutorial1_basics.md) showing simple regression and confidence intervals.
